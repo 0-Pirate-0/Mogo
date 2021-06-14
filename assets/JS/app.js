@@ -1,41 +1,30 @@
 $(function () {
-
-    var header = $("header"),
+    let header = $("header"),
         inrtroH = $("#intro").innerHeight(),
-        scrollOffset = $(window).scrollTop();
-
-    /* Fixed Header */
-
-    $(window).on("scroll", function () {
-        scrollOffset = $(this).scrollTop();
-
-        checkScroll(scrollOffset);
-    });
-
-    function checkScroll(scrollOffset) {
-        if (scrollOffset >= inrtroH) {
-            header.addClass("fixed")
-        } else {
-            header.removeClass("fixed")
-        }
-    };
-
+        nav = $("nav");
 
     /* Smoth scroll */
     $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
-
         var $this = $(this),
             blockId = $this.data("scroll"),
             blockOffset = $(blockId).offset().top
 
-        $("#nav a").removeClass("active");
-        $this.addClass("active");
-
         $("html, body").animate({
-            scrollTop: blockOffset
+            scrollTop: blockOffset - header.height()
         }, 500);
     });
+
+    /* Fixed Header */
+    setInterval(() => {
+        if ($(window).scrollTop() > inrtroH - header.height() && !nav.hasClass('active')) {
+            header.addClass("fixed")
+        } else if ($(window).scrollTop() >= 0 && nav.hasClass('active')) {
+            header.addClass("fixed")
+        } else {
+            header.removeClass("fixed")
+        }
+    }, 1);
 
 
     /* Menu nav toggle */
@@ -49,11 +38,7 @@ $(function () {
     /* Collapse */
     $("[data-collapse]").on("click", function (event) {
         event.preventDefault();
-
-        var $this = $(this),
-            blockId = $this.data("collapse");
-
-        $this.toggleClass("active");
+        $(this).toggleClass("active");
     });
 
     /* Slider */

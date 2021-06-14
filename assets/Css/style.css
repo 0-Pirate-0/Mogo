@@ -32,15 +32,12 @@ hr {
 }
 
 /* Container */
-
 .container {
 	width: 100%;
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
-
-
 
 /* Intro */
 .intro {
@@ -127,7 +124,6 @@ hr {
 
 }
 
-
 /* Nav */
 .nav {
 	font-size: 14xp;
@@ -173,23 +169,15 @@ hr {
 	opacity: 1;
 }
 
-.nav__link.active {
-	color: #fce38a;
-}
-
 /* Nav toggle */
 .nav-toggle {
 	width: 30px;
 	padding: 10px 0;
 	display: none;
-
-	font-size: 0;
 	color: transparent;
-
 	border: 0;
 	background: none;
 	cursor: pointer;
-
 	position: absolute;
 	top: 24px;
 	right: 24px;
@@ -204,16 +192,13 @@ hr {
 	display: block;
 	width: 100%;
 	height: 3px;
-
 	background-color: #fff;
-
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
-
 	transition: background .2s linear;
 }
 
@@ -222,13 +207,10 @@ hr {
 	content: "";
 	width: 100%;
 	height: 3px;
-
 	background-color: #fff;
-
 	position: absolute;
 	left: 0;
 	z-index: 1;
-
 	transition: transform .2s linear;
 }
 
@@ -255,7 +237,6 @@ hr {
 }
 
 /* Button */
-
 .btn {
 	display: inline-block;
 	vertical-align: top;
@@ -280,7 +261,6 @@ hr {
 
 
 /* Slider */
-
 .slider {
 	width: 100%;
 
@@ -332,10 +312,7 @@ hr {
 	font-weight: bold;
 }
 
-
-
 /* Section */
-
 .section {
 	padding: 80px 0;
 }
@@ -402,9 +379,7 @@ hr {
 
 }
 
-
-/* card */
-
+/* Card */
 .card {
 	margin: 80px -15px;
 	display: flex;
@@ -488,7 +463,6 @@ hr {
 }
 .card__info {
 	margin-top: 20px;
-
 	text-align: center;
 }
 
@@ -507,7 +481,6 @@ hr {
 }
 
 /* Statistics */
-
 .statistics {
 	background-color: #95e1d3;
 }
@@ -543,9 +516,7 @@ hr {
 	text-transform: uppercase;
 }
 
-
 /* Services */
-
 .services {
 	display: flex;
 	flex-wrap: wrap;
@@ -584,8 +555,7 @@ hr {
 	color: #999;
 }
 
-/* devices */
-
+/* Devices */
 .devices {
 	width: 100%;
 	max-width: 600px;
@@ -608,7 +578,6 @@ hr {
 
 
 /* We do */
-
 .wedo {
 	display: flex;
 	flex-wrap: wrap;
@@ -627,7 +596,6 @@ hr {
 }
 
 /* Accordion */
-
 .accordion__item {
 	border: 1px solid #e5e5e5;
 	margin-bottom: 10px;
@@ -697,7 +665,6 @@ hr {
 }
 
 /* Reviews */
-
 .reviews {
 	position: relative;
 }
@@ -727,7 +694,6 @@ hr {
 
 .reviews__text {
 	margin-bottom: 15px;
-
 	font-size: 24px;
 	font-style: italic;
 	font-weight: 300;
@@ -747,7 +713,6 @@ hr {
 	width: 60px;
 	height: 3px;
 	margin-right: 10px;
-
 	background-color: #f38181;
 }
 
@@ -796,8 +761,7 @@ hr {
 	transform: rotate(135deg);
 }
 
-/* social */
-
+/* Social */
 .social {
 	display: flex;
 	justify-content: center;
@@ -836,7 +800,6 @@ hr {
 	transition: background .1s linear, color .1s linear;
 }
 
-
 .social__item:last-child {
 	border-right: 0;
 }
@@ -847,7 +810,6 @@ hr {
 }
 
 /* Logos */
-
 .logos {
 	display: flex;
 	justify-content: space-between;
@@ -914,7 +876,6 @@ hr {
 
 .works__title {
 	margin-bottom: 5px;
-
 	font-size: 14px;
 	text-transform: uppercase;
 }
@@ -926,7 +887,6 @@ hr {
 }
 
 /* Clients */
-
 .clients {
 	display: flex;
 	flex-wrap: wrap;
@@ -983,7 +943,6 @@ hr {
 }
 
 /* Blog */
-
 .blog {
 	display: flex;
 	flex-wrap: wrap;
@@ -1075,7 +1034,6 @@ hr {
 }
 
 /* Map */
-
 .map {
 	text-align: center;
 }
@@ -1107,7 +1065,6 @@ hr {
 }
 
 /* Footer */
-
 .footer {
 	padding-top: 65px;
 
@@ -1228,8 +1185,7 @@ hr {
 	font-weight: 300;
 }
 
-/* instagram */
-
+/* Instagram */
 .instagram {
 	display: flex;
 	flex-wrap: wrap;
@@ -1247,8 +1203,7 @@ hr {
 	height: auto;
 }
 
-/* subscribe */
-
+/* Subscribe */
 .subscribe {
 	width: 100%;
 	max-width: 380px;
@@ -1310,7 +1265,6 @@ hr {
 }
 
 @media (max-width: 1230px) {
-
 	/* Intro */
 	.intro__suptitle {
 		font-size: 52px;
@@ -1327,7 +1281,6 @@ hr {
 }
 
 @media (max-width: 990px) {
-
 	/* Intro */
 	.intro__suptitle {
 		font-size: 32px;
@@ -1416,7 +1369,6 @@ hr {
 }
 
 @media (max-width: 770px) {
-
 	/* Intro */
 	.intro {
 		min-height: 650px;
@@ -1563,7 +1515,6 @@ hr {
 }
 
 @media screen and (max-width: 575px) {
-
 	/* Intro */
 	.intro__suptitle {
 		font-size: 22px;
@@ -1625,7 +1576,6 @@ hr {
 	}
 
 	/* Logos */
-
 	.logos {
 		flex-wrap: wrap;
 		justify-content: center;
